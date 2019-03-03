@@ -1,0 +1,45 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "React Infinite Scroll Challenge | Scotch.io Code Challenge -- ChrisOnCode",
+  "main": "server.js",
+  "keywords": [
+    "NodeJS",
+    "ReactJS"
+  ],
+  "author": "ChrisOnCode",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-infinite-scroll-component": "^4.5.1",
+    "react-spring": "^8.0.9",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "opn-cli": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src/**/*.js",
+    "start": "webpack-dev-server --mode development --hot",
+    "build": "cp src/index.html public/ && webpack --mode production",
+    "demo": "cd public && opn index.html",
+    "start-server": "node server.js"
+  }
+}
