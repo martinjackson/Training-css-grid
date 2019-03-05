@@ -2,6 +2,7 @@
 const fs = require('fs');
 const express = require('express');
 const serveIndex = require('serve-index');
+require('dotenv').config()
 
 const app = express();
 

@@ -10,7 +10,7 @@ passport.deserializeUser(function (id, done) {
   done(null, JSON.parse(id))
 })
 
-module.exports = (app) => {
+export default (app) => {
   app.use(require('cookie-parser')());
 
   app.use(session({

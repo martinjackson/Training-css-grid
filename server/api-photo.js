@@ -4,8 +4,8 @@ const { toJson } = require('unsplash-js');
 global.fetch = require('node-fetch');
 
 const splash = new Unsplash({
-   applicationId: '13c5e75b93a9409a111014c4e07b9ecab9ff26ee201693ce0dc8c2a6609b118e',
-   secret: 'c4b8f8376df2415b9c0cfd79b193bd40291c42a6b575d1e675e596abc69cafcd'
+   applicationId: process.env.UNSPLASH_ID,
+   secret: process.env.UNSPLASH_SECRET
 });
 
 
