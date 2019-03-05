@@ -15,7 +15,7 @@ app.get('/api/hello', apiHello);
 app.get('/api/photos', apiPhotos);
 
 let port = 8081
-let home = ( fs.existsSync('public') ) ? 'public' : '.'
+let home = ( fs.existsSync('../public') ) ? '../public' : '.'
 
 app.use(express.static(home));     // serve up static content
 app.use(serveIndex(home));         // serve a directory view
