@@ -3,8 +3,8 @@
 ## Anatomy of the Application
 
 ```
-|-- public                         Where the front end (bundle.js and index.js) is built
-|                                  and all the assets arre served from
+|-- public                         Where the front end files (bundle.js and index.html) are built
+|                                  and where all static assets are served
 |
 |-- server                         Sub project, location of all backend server APIs and library source
 |   |-- api-hello.js
@@ -13,7 +13,7 @@
 |   |-- package.json              Sub project npm dependancies and npm run commands
 |   `-- server.js                 main server source file
 |
-|-- src                           ES7 ReactJS frontend components
+|-- src                           ES8 ReactJS frontend components (webpack and babel transform to web ready)
 |   |-- App.js
 |   |-- index.html                (copied to public/ folder)
 |   |-- index.js                  entry point for webpack to build bundle
